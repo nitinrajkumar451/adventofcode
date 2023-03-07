@@ -21,7 +21,6 @@ file_name = "./crates.txt"
 current_file=File.open(file_name)
 file_data = current_file.read
 moves=file_data.split("\n")
-i=0
 moves.each do |m|
   move = m.split(" ")
   number_of_crates=move[1].to_i
